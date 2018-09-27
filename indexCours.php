@@ -13,8 +13,7 @@
     <body>
         
         <?php
-
-            require "database.php";
+		    require "database.php";
             require "Form.php";
             require "matiere.php";
 
