@@ -1,0 +1,101 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+    margin: 70px 0px;
+    background: red;
+}
+
+.heading 
+{
+    text-align: center;
+    margin-bottom: 60px;        
+}
+h1
+{
+    text-transform: uppercase;
+        color: #fff;
+}
+#contact-form
+{
+    font-size: 20px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+/*---  NEW  ------*/
+
+.form-control
+{
+    height: 50px;
+    font-size: 18px;
+}
+
+
+#contact-form .thank-you
+{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.button1
+{
+    border: 1px solid #ddd;
+    background: black;
+    color: #fff;
+    width: 100%;        
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in 0s;
+}
+.button1:hover
+{
+    background: grey;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

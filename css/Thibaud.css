@@ -1,0 +1,52 @@
+body
+{
+	
+}
+
+h1
+{
+	text-align: center;
+}
+
+thead
+{
+	background-color: rgb(0, 74, 134);
+	color: #FFF;
+
+	
+	
+
+}
+
+.bouton
+{
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+
+
+
+.ligneTab:hover .btn
+{ 
+    visibility : visible;
+    padding-right: 10px;
+    font-size: 20px;
+
+    
+    
+}
+ 
+.btn
+{
+   visibility : hidden;
+   font-size: 20px;
+   
+}
+
+tbody
+{
+	text-align: center;
+}
+
+
