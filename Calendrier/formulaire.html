@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/formulaire.css" />
+        
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+        <title>Formulaire</title>
+
+        <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+          </script>        
+
+    </head>
+    <body>
+        
+    <!-- bandeau -->
+
+        <div class="boiteHeader">
+
+            <div class="logoItes"> 
+                <a href="index.html"> <img src="Image/logo-coding-factory.png" > </a>
+            </div>
+                    
+                
+
+                <div class="dn">
+                
+                    <div class="menu1 surv surv:hover" ">
+                        <a href="https://codingfactory.fr/concept/" class="menu3">
+                            <div class="menu2">CONCEPT</div></a>
+                    </div>
+
+                    <div class="menu1 surv surv:hover">
+                        <a href="https://codingfactory.fr/developpeur/" class="menu3">
+                            <div class="menu2">FORMATIONS</div></a>
+                    </div>
+
+                    <div class="menu1 surv surv:hover">
+                        <a href="https://codingfactory.fr/equipe/" class="menu3">
+                            <div class="menu2">EQUIPE</div></a>
+                    </div>
+
+                    <div class="menu1 surv surv:hover">
+                        <a href="https://codingfactory.fr/entreprises/" class="menu3">
+                            <div class="menu2">ENTREPRISE</div></a>
+                    </div>
+
+                    <div class="menu1 surv surv:hover">
+                        <a href="https://codingfactory.fr/presse/" class="menu3">
+                            <div class="menu2">PRESSE</div></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <div class="backgr">
+		<!-- Img -->
+    </div>
+
+    <!-- Formulaire -->
+    
+    <div class="contform">
+
+        <div>
+            <h1 style="color: #464646"> <!-- changer police -->
+                &Eacute;vènement 
+            </h1>
+        </div>
+
+        <div>
+            <form>
+                <p>Titre</p>
+                <input type="text" name="Titre" class="qx">
+                
+                <br>
+                
+                <p>Date</p>
+                <div >
+                    <input type="text" id="datepicker" class="qx" style="text-align: center">
+                </div>
+
+                <p>Localisation</p>
+                <input type="text" name="localisation" class="qx"> 
+                
+                <br>
+
+                <p>Notes</p>
+                <textarea name="Notes" rows="5" cols="27" class="qx1">    
+                </textarea>
+            </form>
+        </div>
+
+        <br>
+
+        <div>
+            <a href="https://codingfactory.fr/presse/" class="menu3"> 
+                <input type="submit" name="send" value="Annuler" class="button button2 button2:hover">
+            </a>
+            <b style="opacity: 0">...</b>
+            <a href="https://codingfactory.fr/presse/" class="menu3">
+                <input type="submit" name="send" value="Enregistrer" class="button button1 button1:hover">
+            </a>
+        </div>
+
+    </div> 
+		
+	<footer>
+        <p>
+            <img src="./Image/logos1.jpg" class="footerimg1 dn"><br>
+            <img src="./Image/logo2.png" class="footerimg2 dn">
+		</p>
+		<p>La Coding Factory by ITESCIA est une école du code créée à l'initiative d'<span>ITESCIA</span> , école de la <span>CCI Paris Ile-de-France.</span></p>
+		<div class="section_footer_colored">
+			<p class="mention_padding">
+                    <a href="#" class="linkfooter">Mention Légales</a> - <a href="#" class="linkfooter">Plan du Site</a> - <a href="#" class="linkfooter">Contact</a>
+            </p>
+			<p>
+                Copyright 2018 SMARTACUS
+            </p>	
+			<p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+			    <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+            </p>
+
+        </div>
+	</footer>
+    
+</body>
+</html>
