@@ -10,9 +10,9 @@ public function __construct($type)
     $this->type = $type;
   }
 
-  public function input($name){
+  public function input ($name){
     echo '<p><label for="'.$name.'">'.$name.'</label></p>';
-    echo '<p><input id="'.$name.'" text="text" name="'.$name.'"></p>';
+    echo '<p><input id="'.$name.'" type="text" name="'.$name.'"></p>';
   }
 
   public function submit(){
@@ -20,4 +20,8 @@ public function __construct($type)
 
   }
 
+  public function checkbox ($name){
+    echo '<p><label for="'.$name.'">'.$name.'</label></p>';
+    echo '<p><input id="'.$name.'" type="checkbox" name="'.$name.'"></p>';
+  }
 }

@@ -1,101 +1,148 @@
-body
+.bodyCours
 {
-    font-family: 'Lato', sans-serif;
-    margin: 70px 0px;
-    background: red;
+    font-family: 'Oswald', sans-serif;
+    background: #ffffff;
 }
 
-.heading 
+.bodyPersonnes
 {
-    text-align: center;
-    margin-bottom: 60px;        
+    font-family: 'Oswald', sans-serif;
+    background: #ffffff;
 }
-h1
-{
-    text-transform: uppercase;
-        color: #fff;
-}
-#contact-form
-{
-    font-size: 20px;
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-}
-/*---  NEW  ------*/
 
-.form-control
+#contact-formPersonnes
 {
-    height: 50px;
     font-size: 18px;
-}
-
-
-#contact-form .thank-you
-{
+    background: #ccc;
+    padding: 50px;
     text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 22px;
 }
-.button1
-{
-    border: 1px solid #ddd;
-    background: black;
-    color: #fff;
-    width: 100%;        
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 18px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in 0s;
+
+.logocoding {
+    width:300px;
 }
-.button1:hover
-{
-    background: grey;
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cc2030;
+}
+
+ul.topnav li {float: left; width: 30%; padding: 4px;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+ul.topnav li a.active {background-color: rgba(255, 0, 0, 0.678);}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+/* Footer */
+footer p{
+    color : white;
+    text-align: center;
+}
+
+footer .footerimg1 {
+    text-align: center;
+    margin-top: 50px;
+    width: 80%;
+}
+footer .footerimg2 { 
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+footer .section_footer_colored{
+    width: 100%;
+    height: auto;
+    padding: 8px 0 50px 0;
+    background-color:#282a2b;
+}
+
+footer .section_footer_colored a {
+    text-decoration: none;
+    color : #bfbfbf;
+}
+
+footer .mention_padding{
+    padding-top: 30px;
+}
+
+footer .linkfooter{
+    color: inherit;
+    transition: all 0.5s ease;
+}
+
+footer .linkfooter:hover{
+
+    color: #CC201C;
     
 }
 
+/* Bandeau -- */
+
+.dn {
+    margin-top: -10px;
+    margin-left: 20%;   
+    padding: 20px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
 
 
+.menu1 {
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -4px;
+    float: left;
+    display: flex;
+}
 
+.menu2 {
+    color: #000000;
+}
 
+.menu3 {
+    text-decoration: none;
+}
 
+.surv {
+    border-top: 2px solid rgb(0, 0, 0);
+    /* transition quand la souris quitte l'élément */
+    transition: border-color 0,4s;
+}
 
+.surv:hover {
+    border-top: 2px solid #000000;
+    /* transition quand la souris survole */
+    transition: all 2s;
+}
 
+.backgr{
+    background-image: url("./../Image/logo_smartacus1.png");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.main {
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

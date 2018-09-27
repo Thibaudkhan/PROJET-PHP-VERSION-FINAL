@@ -34,9 +34,7 @@
 
 
   public function getAllRow($myTable){
-    foreach($this->bdd->query('SELECT * FROM '. $myTable) as $row) {
-      print_r($row);
-      
+    foreach($this->bdd->query('SELECT * FROM '. $myTable) as $row) {      
     }
   }
 
