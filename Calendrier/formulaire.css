@@ -1,0 +1,197 @@
+﻿/* -- Bandeau -- */
+
+.dn {
+    margin-top: -10px;
+    margin-left: 20%;
+   
+    padding: 20px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu1 {
+    color: #da0000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -4px;
+    float: left;
+    display: flex;
+}
+
+.menu2 {
+	color: #da0000;
+}
+
+.menu3 {
+	text-decoration: none;
+}
+
+.surv {
+	border-top: 2px solid #fff;
+	/* transition quand la souris quitte l'élément */
+	transition: border-color 0,4s;
+}
+
+.surv:hover {
+	border-top: 2px solid #da0000;
+	/* transition quand la souris survole */
+	transition: all 2s;
+}
+
+.backgr{
+    background-image: url("./../Image/logo_smartacus1.png");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+
+}
+
+/* -- Formulaire -- */
+
+.contform {
+    background-color: #D8D8D8;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 30%;
+    margin-right: 30%;
+	padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#ui-datepicker-div{
+	background-color: gainsboro;
+	border-radius: 7px;
+}
+
+.qx {
+    background-color: #ffffff;
+    border-color: #636363;
+    height: 30px;
+    width: 225px;
+    border-radius: 6px;
+	
+	border: 0px;
+}
+
+.qx:checked {
+    background-color: #000;
+    border-color: #000;
+	transition-duration: 0.4s;
+}
+
+.qx1 {
+    background-color: #ffffff;
+    border-color: #636363;
+    height: 120px;
+    width: 225px;
+    border-radius: 6px;
+	
+	border: 0px;
+}
+
+.button {
+    height: 30px;
+	width: 125px;
+	border: 10px;
+	border-radius: 7px;
+	background-color: #C9C9C9;
+	
+}
+
+.button1 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.button2 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+
+
+  @media screen and (min-width: 300px) and (max-width: 980px) {
+   /* .contform {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        margin-left: 90px;
+        margin-right: 90px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+    }  */ 
+    /* faire un burger*/
+    .dn {
+        
+        align-items: center;
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        height: 50px;
+
+
+    
+
+
+
+
+
+    }
+
+   
+  }
+
+  @media screen and (max-width: 800px) {
+    .backgr  {
+      display: none;
+          }
+  }
+  @media screen and (max-width: 300px) {
+    .contform  {
+      margin: 10px;
+      margin-bottom: 50px;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    .bd {
+        align-items: center;
+    }
+}
+
+.logoItes
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.boiteHeader
+{
+    display: flex;
+
+    
+}
