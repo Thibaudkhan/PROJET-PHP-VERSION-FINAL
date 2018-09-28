@@ -52,12 +52,13 @@
 
             <h1>MATIERE</h1>
 
-                        <p> Bouton Pour tableau <a href="TabCours.php"><input type="button" class="btn" value="Tableau" /></a> </p>
+                       
         
         <?php
 		    require "database.php";
             require "Form.php";
             require "matiere.php";
+            require "Thibaudbase.php";
 
 
             $myForm = new Form('post');
@@ -88,6 +89,46 @@
         }
         ?>
 
+        <h1> Tableau cours </h1>
+        <table class="tabCours">
+                  <thead>
+                    <tr >
+                      <div class="center">
+                      <th>Nom</th>
+                      <th>Description</th>
+                      <th>Date</th>
+                      </div>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <?php
+
+                        $db = Database::connect();
+                        $statement = $db->query('SELECT * FROM cours');
+                        while($item = $statement->fetch()) 
+                        {
+                            if($item['id'] % 2 == 0){
+                                echo '<tr class="pair">';
+                            }
+                            else {
+                                echo '<tr class="impair">';
+                            }
+
+
+                            echo '<td>'. $item['nom'] . '</td>';
+
+                            echo '<td>'. $item['description'] . '</td>';
+                            echo '<td>'. $item['adate'] . '</td>';
+                           
+
+                            echo '</tr>';
+                            echo "</div>";
+                        }
+                        
+                      ?>
+                  </tbody>
+                </table>
 
      
         <footer>

@@ -103,9 +103,9 @@
     <h1>Résumé</h1>
     <div id="blockFiltre" style="background-color: #ccc;"> <!-- j'y arrivais pas avec une page css -->
 
-		<p> Bouton Recherche des personnes pour le site de Pontoise <a href="lien/Pontoise.php"><input type="button" class="btn" value="Click Me :)" /></a> </p>
-		<p> Bouton Recherche des personnes pour le site de Champeret <a href="lien/Champeret.php"><input type="button" class="btn" value="Click Me ;)" /></a> </p>
-		<p> Bouton Recherche des personnes pour les deux sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Click Me :)" /></a> </p>
+		<p> Liste des personnes pour le site de Pontoise <a href="lien/Pontoise.php"><input type="button" class="btn" value="Afficher" /></a> </p>
+		<p> Liste des personnes pour le site de Champeret <a href="lien/Champeret.php"><input type="button" class="btn" value="Afficher" /></a> </p>
+		<p> Liste des personnes pour les deux sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Afficher" /></a> </p>
    
 
             <h2> Colone cours</h2>

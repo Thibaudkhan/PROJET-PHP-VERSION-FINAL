@@ -51,12 +51,12 @@
     </ul>
             <h1>Personnes</h1>
 
-            <p> Bouton Pour tableau <a href="TabIntervenants.php"><input type="button" class="btn" value="Tableau" /></a> </p>
 
         <?php
             require "database.php";
             require "Form.php";
             require "personnes.php";
+            require "Thibaudbase.php";
 
             $myForm = new Form('post');
             $bdd = new data('mysql', 'localhost', 'intervenants', 'root', '');
@@ -68,14 +68,14 @@
 
         <?php        
 
-        $myForm->input('Nom');echo '<p class="test">Ex : "Votre Nom"</p>';
-        $myForm->input('Prenom');echo '<p class="test">Ex : "Votre Prenom"</p>';
-        $myForm->input('Mail');echo '<p class="test">Ex : "exemple@gmail.com"</p>';
-        $myForm->input('Tel');echo '<p class="test">Ex : "0666666666"</p>';
-        $myForm->input('Site_Pontoise');echo '<p class="test">Ex : "0=non 1=oui"</p>';
-        $myForm->input('Site_Champeret');echo '<p class="test">Ex : "0=non 1=oui"</p>';
-        $myForm->input('Nom_Cours');echo '<p class="test">Ex : "Sujet du Cours"</p>';
-        $myForm->submit();
+            $myForm->input('Nom');echo '<p class="test">Ex : "Votre Nom"</p>';
+            $myForm->input('Prenom');echo '<p class="test">Ex : "Votre Prenom"</p>';
+            $myForm->input('Mail');echo '<p class="test">Ex : "exemple@gmail.com"</p>';
+            $myForm->input('Tel');echo '<p class="test">Ex : "0666666666"</p>';
+            $myForm->input('Site_Pontoise');echo '<p class="test">Ex : "0=non 1=oui"</p>';
+            $myForm->input('Site_Champeret');echo '<p class="test">Ex : "0=non 1=oui"</p>';
+            $myForm->input('Nom_Cours');echo '<p class="test">Ex : "Sujet du Cours"</p>';
+            $myForm->submit();          
         ?>
 
         
@@ -90,7 +90,57 @@
         $bdd->setInsertPersonnes($perso->getNom(),$perso->getPrenom(), $perso->getMail(), $perso->getTel(), $perso->getSPontoise(), $perso->getSChamperet(), $perso->getNCours());
         $bdd->getAllRow("personnes");       
         }
-        ?>    
+        ?>  
+        <h1> Tableau Intervenants </h1>
+
+
+            <table class="tabCours">
+          <thead>
+            <tr >
+              <div class="center">
+              <th>Nom</th>
+              <th>Prenom</th>
+              <th>Mail</th>
+              <th>Télephone</th>
+              <th>Site Pontoise</th>
+              <th>Site Champeret</th>
+              <th>Nom du Cours</th>
+              </div>
+             
+            </tr>
+          </thead>
+          <tbody>
+              <?php
+
+                $db = Database::connect();
+                $statement = $db->query('SELECT * FROM personnes');
+                while($item = $statement->fetch()) 
+                {
+                    if($item['id'] % 2 == 0){
+                        echo '<tr class="pair">';
+                    }
+                    else {
+                        echo '<tr class="impair">';
+                    }
+
+                    echo '<td>'. $item['nom'] . '</td>';
+
+                    echo '<td>'. $item['prenom'] . '</td>';
+                    echo '<td>'. $item['mail'] . '</td>';
+                    echo '<td>'. $item['tel'] . '</td>';
+                    echo '<td>'. $item['sPontoise'] . '</td>';
+                    echo '<td>'. $item['sChamperet'] . '</td>';
+                    echo '<td>'. $item['nCours'] . '</td>';
+
+                
+                    echo '</tr>';
+                    echo "</div>";
+                }
+                
+              ?>
+          </tbody>
+        </table>
+        
 
             
         
