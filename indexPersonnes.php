@@ -44,11 +44,12 @@
 </div>
 
     <ul class="topnav">
-        <li><a class="accueilnav" href="indexPersonnes.php">ACCUEIL</a></li>
+        <li><a class="accueilnav" href="indexPersonnes.php">INTERVENANTS</a></li>
         <li><a class="calendriernav" href="./Calendrier/9Septembre.html">CALENDRIER</a></li>
-        <li><a class="intervenantsnav" href="indexCours.php">INTERVENANTS</a></li>
+        <li><a class="intervenantsnav" href="indexCours.php">MATIERE</a></li>
         <li><a class="intervenantsnav" href="filtrePage.php">RESUME</a></li>
     </ul>
+            <h1>Personne</h1>
 
         <?php
             require "database.php";
@@ -88,6 +89,8 @@
         $bdd->getAllRow("personnes");       
         }
         ?>    
+
+            <p> Bouton Pour tableau <a href="TabIntervenants.php"><input type="button" class="btn" value="Tableau" /></a> </p>
         
         <footer>
 			<p>

@@ -44,16 +44,19 @@
     </div>
 
     <ul class="topnav">
-        <li><a class="accueilnav" href="indexPersonnes.php">ACCUEIL</a></li>
+        <li><a class="accueilnav" href="indexPersonnes.php">INTERVENANTS</a></li>
         <li><a class="calendriernav" href="./Calendrier/9Septembre.html">CALENDRIER</a></li>
-        <li><a class="intervenantsnav" href="indexCours.php">INTERVENANTS</a></li>
+        <li><a class="intervenantsnav" href="indexCours.php">MATIERE</a></li>
         <li><a class="intervenantsnav" href="filtrePage.php">RESUME</a></li>
     </ul>
+
+            <h1>MATIERE</h1>
         
         <?php
 		    require "database.php";
             require "Form.php";
             require "matiere.php";
+
 
             $myForm = new Form('post');
             $bdd = new data('mysql', 'localhost', 'intervenants', 'root', '');
@@ -82,9 +85,9 @@
         $bdd->getAllRow("cours");        
         }
         ?>
+            <p> Bouton Pour tableau <a href="TabCours.php"><input type="button" class="btn" value="Tableau" /></a> </p>
 
-        
-        
+     
         <footer>
 			<p>
 			<img src="./Image/logos1.jpg" class="footerimg1"><br>
@@ -99,6 +102,7 @@
 				<a href="https://www.linkedin.com/school/itescia/"> <i class="fab fa-linkedin-in"></i></a>
 				<a href="https://www.instagram.com/itescia_officiel/"> <i class="fab fa-instagram"></i></p></a>
 			</div>
+           
 	
 		</footer>
 
