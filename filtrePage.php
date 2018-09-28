@@ -51,7 +51,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <title></title>
+        <title>Resume</title>
         <meta charset="utf-8"/>
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -102,11 +102,11 @@
 
     <h1>Résumé</h1>
 
-		<p> Bouton Recherche du nom et de Pontoise <a href="lien/Pontoise.php"><input type="button" class="btn" value="Click Me" /></a> </p>
-		<p> Bouton Recherche du nom et de Champeret <a href="lien/Champeret.php"><input type="button" class="btn" value="Click Me" /></a> </p>
-		<p> Bouton Recherche du nom et des sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Click Me" /></a> </p>
+		<p> Bouton Recherche des personnes pour le site de Pontoise <a href="lien/Pontoise.php"><input type="button" class="btn" value="Click Me :)" /></a> </p>
+		<p> Bouton Recherche des personnes pour le site de Champeret <a href="lien/Champeret.php"><input type="button" class="btn" value="Click Me ;)" /></a> </p>
+		<p> Bouton Recherche des personnes pour les deux sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Click Me :)" /></a> </p>
 
-
+            <h2> Colone cours</h2>
 		 <?php 
             while($fetchC = $statementC->fetch() )
             {
@@ -123,13 +123,13 @@
 
 
         ?>
-
+        <h2>Colone personnes</h2>
          <?php 
             while($fetch = $statement->fetch() )
             {
             ?>
                 <form method="POST" action="filtrePage.php?id= <?= $fetch['id']; ?>" >
-                     <?= $fetch['nom']; ?> : <input type="submit" value="Supprimer">
+                     <?= $fetch['nom'] ; ?> : <input type="submit" value="Supprimer">
 
            
                 </form>
