@@ -174,3 +174,8 @@ footer .linkfooter:hover{
     flex-wrap: wrap;  
     margin-top: -40px;  
 }
+
+h1
+{
+    text-align: center;
+}
