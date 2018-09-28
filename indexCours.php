@@ -82,6 +82,8 @@
         $bdd->getAllRow("cours");        
         }
         ?>
+
+        
         
         <footer>
 			<p>
