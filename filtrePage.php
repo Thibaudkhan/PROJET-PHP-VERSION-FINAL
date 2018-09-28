@@ -102,9 +102,9 @@
 
     <h1>Résumé</h1>
 
-		<p> Bouton Recherche du nom et de Pontoise <a href="lien/Pontoise.php"><input type="button" class="btn" value="Click Me" /></a> </p>
-		<p> Bouton Recherche du nom et de Champeret <a href="lien/Champeret.php"><input type="button" class="btn" value="Click Me" /></a> </p>
-		<p> Bouton Recherche du nom et des sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Click Me" /></a> </p>
+		<p> Bouton Recherche des personnes pour le site de Pontoise <a href="lien/Pontoise.php"><input type="button" class="btn" value="Click Me :)" /></a> </p>
+		<p> Bouton Recherche des personnes pour le site de Champeret <a href="lien/Champeret.php"><input type="button" class="btn" value="Click Me ;)" /></a> </p>
+		<p> Bouton Recherche des personnes pour les deux sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Click Me :)" /></a> </p>
 
             <h2> Colone cours</h2>
 		 <?php 
