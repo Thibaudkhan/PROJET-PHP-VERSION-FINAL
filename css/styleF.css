@@ -207,6 +207,10 @@ thead
 .impair {
     background-color: #CCC;
 }
+.pair:hover, .impair:hover {
+    background-color: #CC2030;
+}
+
 
 tbody
 {
