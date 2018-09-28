@@ -151,31 +151,43 @@ footer .linkfooter:hover{
     display: right;
 }
 
+
 .test {
     color: rgb(88,88,88);
     margin-left: 20%;
     display: block;
-    flex-wrap: wrap;  
-    margin-top: -45px;  
-}
-
-.test2 {
-    color: rgb(88,88,88);
-    margin-left: 20%;
-    display: block;
-    flex-wrap: wrap;  
-    margin-top: -40px;  
-}
-
-.test3 {
-    color: rgb(88,88,88);
-    margin-left: 20%;
-    display: block;
-    flex-wrap: wrap;  
-    margin-top: -40px;  
+    flex-wrap: wrap;
+    margin-top: -40px;   
 }
 
 h1
 {
     text-align: center;
+}
+
+@media screen and (max-width: 1810px ){
+    .test {
+        margin-left:45%;
+        display:flex;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 660px ){
+    .test {
+        margin-left:35%;
+        display:flex;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 350px ){
+    .test {
+        margin-left:15%;
+        display:flex;
+        margin-top: 20px;
+    }
+
 }
