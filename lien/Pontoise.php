@@ -64,15 +64,15 @@ require '../ThibaudBase.php';
     while($test = $statement->fetch()){
     	?>
     
-    <ul>
-    	<ul>
+    <ul style="background-color: #ccc;">
+    	
     	<?php echo 'Son nom est : ' , $test['nom']; 
     		echo $test['prenom'], '<br>';
     		echo 'Son mail  :', $test['mail'];
-    		echo ' , son numéro de téléphone : +33', $test['tel'], '<br>';
+    		echo ' , son numéro de téléphone : +33 ', $test['tel'], '<br>';
     		echo ' cours :' , $test['nCours'], '<br>'; ?>
     </ul>
-    </ul>
+    
 
    <?php
 
