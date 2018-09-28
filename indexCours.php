@@ -51,6 +51,8 @@
     </ul>
 
             <h1>MATIERE</h1>
+
+                        <p> Bouton Pour tableau <a href="TabCours.php"><input type="button" class="btn" value="Tableau" /></a> </p>
         
         <?php
 		    require "database.php";
@@ -85,7 +87,7 @@
         $bdd->getAllRow("cours");        
         }
         ?>
-            <p> Bouton Pour tableau <a href="TabCours.php"><input type="button" class="btn" value="Tableau" /></a> </p>
+
 
      
         <footer>
