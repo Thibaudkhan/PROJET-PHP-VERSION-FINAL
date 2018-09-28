@@ -19,9 +19,4 @@ public function __construct($type)
     echo '<button name="Envoyer" type="submit">Envoyer</button>';
 
   }
-
-  public function checkbox ($name){
-    echo '<p><label for="'.$name.'">'.$name.'</label></p>';
-    echo '<p><input id="'.$name.'" type="checkbox" name="'.$name.'"></p>';
-  }
 }

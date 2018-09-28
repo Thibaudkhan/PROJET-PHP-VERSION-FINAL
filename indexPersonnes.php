@@ -64,15 +64,17 @@
 
         <?php        
 
-        $myForm->input('Nom');
-        $myForm->input('Prenom');
-        $myForm->input('Mail');
-        $myForm->input('Tel');
-        $myForm->checkbox('Site_Pontoise');
-        $myForm->checkbox('Site_Champeret');
-        $myForm->input('Nom_Cours');
+        $myForm->input('Nom');echo '<p class="test">Ex : "Votre Nom"</p>';
+        $myForm->input('Prenom');echo '<p class="test2">Ex : "Votre Prenom"</p>';
+        $myForm->input('Mail');echo '<p class="test3">Ex : "exemple@gmail.com"</p>';
+        $myForm->input('Tel');echo '<p class="test">Ex : "0666666666"</p>';
+        $myForm->input('Site_Pontoise');echo '<p class="test">Ex : "0=non 1=oui"</p>';
+        $myForm->input('Site_Champeret');echo '<p class="test">Ex : "0=non 1=oui"</p>';
+        $myForm->input('Nom_Cours');echo '<p class="test">Ex : "Sujet du Cours"</p>';
         $myForm->submit();
         ?>
+
+        
 
         </form>
 

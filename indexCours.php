@@ -64,9 +64,9 @@
 
         <?php        
 
-        $myForm->input('Nom');
-        $myForm->input('Description');
-        $myForm->input('Date');      
+        $myForm->input('Nom');echo '<p class="test">Ex : "Votre Nom"</p>';
+        $myForm->input('Description');echo '<p class="test">Ex : "Description du cours"</p>';
+        $myForm->input('Date');echo '<p class="test">Ex : "YYYY/MM/DD"</p>';
         $myForm->submit();
         ?>
 

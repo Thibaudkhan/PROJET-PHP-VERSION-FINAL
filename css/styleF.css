@@ -101,7 +101,6 @@ footer .linkfooter:hover{
     justify-content: center;
 }
 
-
 .menu1 {
     color: #000000;
     margin-left: 20px;
@@ -145,4 +144,33 @@ footer .linkfooter:hover{
     margin-right: 150px;
     padding: 20px;
 
+}
+
+.mailpersonnes {
+    color: rgb(88, 88, 88);
+    display: right;
+}
+
+.test {
+    color: rgb(88,88,88);
+    margin-left: 20%;
+    display: block;
+    flex-wrap: wrap;  
+    margin-top: -45px;  
+}
+
+.test2 {
+    color: rgb(88,88,88);
+    margin-left: 20%;
+    display: block;
+    flex-wrap: wrap;  
+    margin-top: -40px;  
+}
+
+.test3 {
+    color: rgb(88,88,88);
+    margin-left: 20%;
+    display: block;
+    flex-wrap: wrap;  
+    margin-top: -40px;  
 }
