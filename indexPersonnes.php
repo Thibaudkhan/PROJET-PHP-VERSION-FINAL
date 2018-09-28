@@ -49,7 +49,9 @@
         <li><a class="intervenantsnav" href="indexCours.php">MATIERE</a></li>
         <li><a class="intervenantsnav" href="filtrePage.php">RESUME</a></li>
     </ul>
-            <h1>Personne</h1>
+            <h1>Personnes</h1>
+
+            <p> Bouton Pour tableau <a href="TabIntervenants.php"><input type="button" class="btn" value="Tableau" /></a> </p>
 
         <?php
             require "database.php";
@@ -90,7 +92,7 @@
         }
         ?>    
 
-            <p> Bouton Pour tableau <a href="TabIntervenants.php"><input type="button" class="btn" value="Tableau" /></a> </p>
+            
         
         <footer>
 			<p>
