@@ -1,6 +1,6 @@
 <?php
 
-require '../ThibaudBaseTEST.php';
+require '../ThibaudBase.php';
 
      $db = Database::connect();
 
