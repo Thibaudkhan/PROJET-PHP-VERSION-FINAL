@@ -108,7 +108,7 @@
 		<p> Liste des personnes pour les deux sites <a href="lien/PontoiseChamperet.php"><input type="button" class="btn" value="Afficher" /></a> </p>
    
 
-            <h2> Colone cours</h2>
+            <h2> Colonne cours</h2>
 
 		 <?php 
             while($fetchC = $statementC->fetch() )
@@ -127,7 +127,7 @@
 
 
         ?>
-        <h2>Colone personnes</h2>
+        <h2>Colonne personnes</h2>
          <?php 
             while($fetch = $statement->fetch() )
             {
