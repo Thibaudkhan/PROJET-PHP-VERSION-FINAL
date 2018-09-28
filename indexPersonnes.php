@@ -47,6 +47,7 @@
         <li><a class="accueilnav" href="indexPersonnes.php">ACCUEIL</a></li>
         <li><a class="calendriernav" href="./Calendrier/9Septembre.html">CALENDRIER</a></li>
         <li><a class="intervenantsnav" href="indexCours.php">INTERVENANTS</a></li>
+        <li><a class="intervenantsnav" href="filtrePage.php">RESUME</a></li>
     </ul>
 
         <?php
